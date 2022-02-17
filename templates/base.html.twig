@@ -27,7 +27,8 @@
               <li><a class="active" href="{{ path('home') }}">Accueil</a></li>
               <li><a href="#">Packs</a></li>
               <li><a href="#">Contact</a></li>
-              <li style="float:right"><a href="#">Admin</a></li>
+              <li style="float:right"><a href="{{ path('admin') }}">Admin</a></li>
+              <li style="float:right"><a href="#">Compte</a></li>
             </ul>
             <br><br>
 
@@ -35,18 +36,11 @@
 
         <footer class="container-fluid">
             <div class="row text-center">
-                <div class="col-4">
-                    <h5>QUELQUES LIENS</h5>
-                    <div class="dropdown-divider"></div>
-                    <a href="{{ path('home') }}">Accueil</a>
-                    <a href="#">Packs</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Admin</a>
-                </div>
-                <div class="col-4 my-auto">
+                
+                <div class="col-6 my-auto">
                 <p>logo-image</p>
                 </div>
-                <div class="col-4">
+                <div class="col-6">
                     <h5>COORDONNÉES</h5>
                     <div class="dropdown-divider"></div>
                     <p>12 rue du Village</p>
