@@ -26,7 +26,8 @@
         <header class="navigation">
             <ul>
                 <li><a class="active" href="{{ path('home') }}">Accueil</a></li>
-                <li><a href="#">Packs</a></li>
+                <li><a href="{{ path('pack') }}">Pack</a></li>
+                <li><a href="{{ path('article') }}">Article</a></li>
                 <li><a href="#">Contact</a></li>
                 <li style="float:right"><a href="{{ path('admin') }}">Admin</a></li>
                 <li style="float:right"><a href="#">Compte</a></li>
@@ -37,20 +38,20 @@
         <main class="container-fluid">
             <div class="row">
 
-                <div class="col-1 bg-secondary text-light" id="aside">
+                <div class="col-2 bg-secondary text-light" id="aside">
                     <nav>
                         <ul class="pt-5">
                             <li class="py-2"><a href="{{ path('admin') }}" title="accueil adminstrateur"><i class="fas fa-laptop"></i> Accueil admin</a></li>
-                            <li class="py-2"><a href="" title="pack"><i class="fas fa-puzzle-piece"></i></a> packs</li>
+                            <li class="py-2"><a href="#" title="pack"><i class="fas fa-gamepad"></i></a> packs</li>
                             <li class="py-2"><a href="#" title="commentaires"><i class="fas fa-comment"></i></a> article</li>
-                            <li class="py-2"><a href="#" title="commentaires"><i class="fas fa-comment"></i></a> commentaires</li>
+                            <li class="py-2"><a href="#" title="contact"><i class="fas fa-envelope"></i></a> contact</li>
                             <li class="py-2"><a href="{{ path('home') }}" title="accueil site"><i class="fas fa-home"></i> accueil du site</a></li>
                             <li class="py-2"><a href="#" title="déconnexion"><i class="fas fa-sign-out-alt"></i> déconnexion</a></li>
                         </ul>
                     </nav>
                 </div>
 
-                <div class="col-11" id="content">
+                <div class="col-10" id="content">
                     <div class="row p-5">
                         {% for label, messages in app.flashes %}
                             {% for message in messages %}

@@ -25,8 +25,9 @@
     
             <ul>
               <li><a class="active" href="{{ path('home') }}">Accueil</a></li>
-              <li><a href="#">Packs</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="{{ path('pack') }}">Pack</a></li>
+              <li><a href="{{ path('article') }}">Article</a></li>
+              <li><a href="{{ path('contact') }}">Contact</a></li>
               <li style="float:right"><a href="{{ path('admin') }}">Admin</a></li>
               <li style="float:right"><a href="#">Compte</a></li>
             </ul>
@@ -38,7 +39,7 @@
             <div class="row text-center">
                 
                 <div class="col-6 my-auto">
-                <p>logo-image</p>
+                <img src="{{ asset ('img/logo.jpg') }}"  class="w-25" alt="Logo du Site">
                 </div>
                 <div class="col-6">
                     <h5>COORDONNÉES</h5>
